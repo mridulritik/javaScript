@@ -30,6 +30,7 @@ console.log(balance.toFixed(1)) //output 400.0
 //}
 
 // third one is toPrecision(--in this we value between 01 to 21--)
+// its important in interview
 const number = 12.8345
 console.log(number.toPrecision(2))  // its only focused on value 2 and other decimal if the round off
 // its return string
