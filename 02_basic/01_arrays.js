@@ -30,3 +30,33 @@ console.log("4th output=>", myArr)
 //for removing value on first of array
 myArr.shift() //we dont need to pass value just like pop
 console.log("5th output=>", myArr)
+
+//3rd ==>
+
+//for checking value are present in array or not
+console.log("6th output==>", myArr.includes(9)) //its output is in boolean expression(True or False)
+
+//4th ==>
+
+//to find index
+console.log("7th output==>", myArr.indexOf(3)) //if value not present its give value "-1"
+
+//5th ==>
+console.log("8th output==>", myArr.join()) //its covert array into string with the comma(,)
+
+//6th ==>
+// slice, splice
+console.log("9th output=>")
+
+console.log("A ", myArr);
+
+const myn1 = myArr.slice(1, 3) //its not include last index of array and its perform changes on deep coppy of array
+
+console.log(myn1);
+console.log("B ", myArr);
+
+console.log("difference between slice and splice are splice changes in oringinal array")//comment
+
+const myn2 = myArr.splice(1, 3) //its include last index and its perform changes on original array
+console.log("C ", myArr);
+console.log(myn2);
