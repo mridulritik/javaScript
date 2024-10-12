@@ -1,3 +1,5 @@
+/*
+
 // object Singelton [means with the help of constructor]
 const tinderUser = new Object() //this is declaration of singleton object
 const newtinder ={}  //this is declration of non singleton object
@@ -65,3 +67,44 @@ console.log(Object.values(tinderUser)) //same as key for value
 console.log(Object.entries(tinderUser)) //by this every key value pair are become the element of array buts its less in use
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) //its used to find that the object have the property or not and its give value in boolean
+
+*/ //temp comment the whole for easier understanding of the other next topic
+
+
+/********* object destructuring and json api ***********/
+
+
+const course = {
+    courseName : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh" 
+}
+
+// course.courseInstructor     //to more usable and easy to use we use destructuring here
+
+const {courseInstructor} =course  //this are one more technique to access the object
+//then after that we dont have to declare the whole .dot structring like course.courseInstructor other than we are directly access it like this
+console.log(courseInstructor)
+
+//we are have ability to put the name as i want for calling like
+const {courseInstructor: instructor} = course  //By this we dont need to use courseInstructor we access this only by Instructor
+console.log(instructor)
+
+/* api concept */
+
+// in old time api give response in XML but at latest there response are in Json
+
+/* this is formate of JSON
+{
+    "name ": "hitesh",
+    "courseName" : "js in hindi",
+    "price" : "free"
+}
+*/
+
+// we are also got response in array
+[
+    {},
+    {},
+    {}
+]
