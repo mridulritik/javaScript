@@ -42,3 +42,12 @@ for(const [key,value] of map){
 }
 
 //checking of for loop on Object     13:00
+const myObject = {
+    game1: 'NFS',
+    game2: 'Spiderman'
+}
+
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);              //object are not iterable with this method but map are.
+    
+// }
